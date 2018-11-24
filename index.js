@@ -1,5 +1,9 @@
 function takeANumber(katzDeliLine, newName){
+<<<<<<< HEAD
   katzDeliLine.push(newName);
+=======
+  currentLine.push(newName);
+>>>>>>> eff1af4050416ee4d0fea90ea2c03ca43bf375ac
   return `Welcome, ${newName}. You are number ${katzDeliLine.length} in line.`;
 }
 
@@ -7,6 +11,7 @@ function nowServing(katzDeliLine){
   if(katzDeliLine.length === 0){
     return "There is nobody waiting to be served!";
   } else {
+<<<<<<< HEAD
     return `Currently serving ${katzDeliLine.shift()}.`;
   }
 }
@@ -24,5 +29,8 @@ function currentLine(katzDeliLine){
       }
     }
     return response;
+=======
+    return katzDeliLine.shift();
+>>>>>>> eff1af4050416ee4d0fea90ea2c03ca43bf375ac
   }
 }
